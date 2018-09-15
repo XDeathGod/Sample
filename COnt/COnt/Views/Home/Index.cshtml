@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home hai bhaiyaa aur Index Action<b>HIHIHi!!</b></title>
+</head>
+<body>
+    <div>
+        <b>
+            Home hai bhaiyaa aur Index Action<b>HIHIHi!!</b>
+        </b>
+    </div>
+    <a href="/Employee/Suck">click here to go to Index home daa EMployee</a>
+    <div>
+        @Html.ActionLink("CLick me Baby", "Index", "Condition")
+    </div>
+    <div>
+        @Html.TextBox("fuck", null, new { id = "hihi" })
+
+    </div>
+    <div>
+        @Html.Password("fuck")
+        <br />
+        @Html.CheckBox("bool", true)
+    </div>
+    @using (Html.BeginForm())
+    {
+        <div>
+            @Html.ActionLink("CLick me Stupid", "Index", "Condition")
+        </div>
+        <div>
+            @Html.TextBox("fuck", "hih", new { id = "hihi" })
+
+        </div>
+    }
+</body>
+</html>

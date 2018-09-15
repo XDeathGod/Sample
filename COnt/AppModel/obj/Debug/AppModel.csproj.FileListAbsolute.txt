@@ -1,0 +1,5 @@
+C:\Users\hp\source\repos\COnt\AppModel\bin\Debug\AppModel.dll
+C:\Users\hp\source\repos\COnt\AppModel\bin\Debug\AppModel.pdb
+C:\Users\hp\source\repos\COnt\AppModel\obj\Debug\AppModel.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\COnt\AppModel\obj\Debug\AppModel.dll
+C:\Users\hp\source\repos\COnt\AppModel\obj\Debug\AppModel.pdb

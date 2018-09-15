@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\MyApp.dll.config
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\MyApp.dll
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\MyApp.pdb
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\AppModel.dll
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\EntityFramework.dll
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\AppModel.pdb
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\EntityFramework.xml
+C:\Users\hp\source\repos\COnt\MyApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\source\repos\COnt\MyApp\obj\Debug\MyApp.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\COnt\MyApp\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\COnt\MyApp\obj\Debug\MyApp.csproj.CopyComplete
+C:\Users\hp\source\repos\COnt\MyApp\obj\Debug\MyApp.dll
+C:\Users\hp\source\repos\COnt\MyApp\obj\Debug\MyApp.pdb

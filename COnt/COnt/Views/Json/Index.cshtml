@@ -1,0 +1,110 @@
+﻿@model COnt.Models.Address
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+<body> 
+    @DateTime.Now
+    <div style="display:none" id="loader">
+        <img src="~/Content/4ea23e6339937b95a8aa5cd08eeb3266.gif" height="200" width="=200" />
+
+    </div>
+
+    @using (Ajax.BeginForm("resul", new AjaxOptions()
+    {
+        OnSuccess = "fnsuck",
+        OnFailure = "fnfuck",
+        HttpMethod = "POST",
+        LoadingElementId = "loader",
+
+
+    }))
+    {
+        <div>
+            @Html.EditorFor(x => x.AddressRoad)
+            <br />
+            @Html.EditorFor(x => x.City)
+            <br />
+            @Html.EditorFor(x => x.State)
+            <br />
+            <input type="submit" value="click me" />
+        </div>
+    }
+    <div>
+        @*<form>
+                <input type="text" id="road" placeholder="ROad" /><br /><br />
+                <input type="text" id="city" placeholder="city" /><br /><br />
+                <input type="text" id="state" placeholder="state" />
+                <br />
+                <input type="button"  onclick="btnclick()" value="senddata" />
+                <button onclick="btnclick()">Click me</button>
+
+            </form>*@
+
+
+        //
+
+    </div>
+
+    <script>
+        function fnsuck(data) {
+            console.log(data)
+            alert("success betichod")
+        }
+        function fnfuck(err) {
+            console.error(err)
+            alert("bhag betichod")
+        }
+
+
+            //function btnclick(){
+            //    var road = $("#road").val()
+            //    var city = $("#city").val()
+
+            //    var state = $("#state").val()
+
+            //    var obj = {
+            //        AddressRoad = road,
+            //        City= city,
+            //        State=state
+
+            //    }
+            //    submitform(obj);
+
+            //}
+
+            //function submitform(obj) {
+            //    $.ajax({
+            //        url: "/Json/resul",
+            //        method: "POST",
+            //        data = obj,
+            //        success: function (data) {
+            //           // console.log(data)
+
+            //         data= JSON.parse(data)
+            //           console.log(data)
+
+            //            //$("#s").text(data.AddressRoad)
+            //            //$("#st").text(data.City)
+            //            //$("#ss").text(data.State)
+            //        },
+            //        error: function (dat) {
+            //            console.log(dat)
+            //        }
+
+
+            //    })
+            //}
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>co</title>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+<body>
+    <div>
+        @Ajax.ActionLink("countries","countres",new AjaxOptions()
+   {
+        InsertionMode= InsertionMode.Replace,
+         UpdateTargetId = "xx",
+   })
+        <br />
+        @Ajax.ActionLink("st","st",new AjaxOptions()
+{
+  InsertionMode= InsertionMode.Replace,
+   UpdateTargetId = "xx",
+})<br />
+        @Ajax.ActionLink("ci","ci",new AjaxOptions()
+{
+  InsertionMode= InsertionMode.Replace,
+   UpdateTargetId = "xx",
+})
+    </div>
+    <div id="xx">
+
+    </div>
+</body>
+</html>

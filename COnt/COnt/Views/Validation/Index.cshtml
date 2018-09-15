@@ -1,0 +1,27 @@
+﻿@model COnt.Models.Valid
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("Inde", "Validation", FormMethod.Post))
+        { 
+            @Html.ValidationSummary()
+
+            @Html.TextBoxFor(x=>x.Name)
+            <br />
+            @Html.TextBoxFor(x=>x.fuck)
+            <br />
+            <input type="submit" value="please Click  me!" />
+        }
+    </div>
+</body>
+</html>

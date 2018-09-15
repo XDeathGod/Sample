@@ -1,0 +1,58 @@
+﻿@using COnt.Models
+@model Employee
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello my the other side</title>
+</head>
+<body>
+    <div>
+        <b>
+            Employee hai bhaiyaa aur Hellow Action<b>HIHIHi!!</b>
+        </b>
+        <a href="/Employee/Suck">click here to go to Suck EMployee</a>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.DisplayForModel()
+        <br />
+
+        <input type="Submit" , value="Submit Bitches" />
+    }
+
+    <hr />
+
+    <div>
+        @Html.Display("Name")
+        @Html.DisplayFor(x => x.Name)
+        <br />
+        @Html.DisplayNameFor(x => x.Name)
+        <br />
+        <p>hihi</p>
+        @Html.DisplayText("Name")
+        @Html.DisplayTextFor(c => c.Email)<br />
+        <br />
+    </div>
+    <hr />
+    @Html.Editor("Name")
+    <br />
+    @Html.EditorFor(c=>c.Email)
+    <br />
+    <hr />
+    <b>hihihihihhihihihihi</b>
+    @Html.EditorForModel()
+    <hr />
+    <hr />
+    <br />
+    <div>
+        @CustomHelper.Image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWm72u5DDEBTQPjZhrt09b6D2cv0Q7DhYSv9wSYC5-JJ5VTmjYFg", "Show me your  Pain");
+        <br />
+        @Html.Img("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkP0bUDp9uPaWREBNvnZHKAyTlVOElUsdyFIYnymfpq9m_XcfS", "do u hate me")
+        <br />
+        @Html.ImgTag("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkP0bUDp9uPaWREBNvnZHKAyTlVOElUsdyFIYnymfpq9m_XcfS", "ff");
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿@model COnt.Models.form
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <section>
+            @using (Html.BeginForm("Index", "ViewTOControl", FormMethod.Post))
+            {
+                <input type="text" name="first" />
+                <br />
+                <input type="text" name="last" />
+                <br />
+                <input type="submit" value="submit" />
+
+            }
+        </section>
+    </div>
+    <div>
+        <section>
+            @using (Html.BeginForm("Ind", "ViewTOControl", FormMethod.Post))
+            {
+                <input type="text" name="first" />
+                <br />
+                <input type="text" name="last" />
+                <br />
+                <input type="submit" value="submit" />
+
+            }
+        </section>
+    </div>
+    <hr />
+    <div>
+        <section>
+            @using (Html.BeginForm("In", "ViewTOControl", FormMethod.Post))
+            {
+                @Html.TextBoxFor(x => x.first)
+                <br />
+                @Html.TextBoxFor(x => x.last)
+                <br />
+                <input type="submit" value="submit" />
+
+            }
+        </section>
+    </div>
+</body>
+</html>

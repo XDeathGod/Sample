@@ -1,0 +1,23 @@
+﻿@model COnt.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pain</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @foreach (var item in ViewBag.fibk)
+            {
+                <label>@item.id, @item.Email,@item.Name</label>
+            }
+        </ul>
+    </div>
+</body>
+</html>
